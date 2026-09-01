@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    
+}
+
+body{
+    scroll-behavior: smooth;
+    background-image: url('../assests/background_img_sec-ola.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+header{
+    background-color: rgba(74, 0, 108, 0.237);
+    width: 100%;
+    padding: 30px;
+    color: aliceblue;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.sec-1{
+    height: 100vh;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.612);
+    gap: 70px;width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.ola{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.acoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 5px 10px 5px 10px;
+    border: solid 1px rgb(74, 160, 217);
+}
+
+a:hover{
+    background-color: rgba(0, 200, 255, 0.226);
+}

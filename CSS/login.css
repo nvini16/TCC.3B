@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-image: url('../assests/background_img_login.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family:  "Fira Code", monospace;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;    
+    background-color: rgba(0, 60, 255, 0.269);
+    padding: 10px;
+}
+
+h3{
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    background: transparent;
+    color: aliceblue;
+    border: none;
+    border: solid 1px blue;
+    margin: 10px;
+}
+
+input::placeholder{
+    font-family: "Fira Code", monospace;
+    color: rgba(240, 248, 255, 0.368);
+}
+
+.acoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    background: transparent;
+    color: aliceblue;
+    font-weight: bold;
+    border: solid 1px blue;
+    transition: 1s;
+}
+
+button:hover{
+    border: solid 2px rgb(70, 193, 255);
+}
