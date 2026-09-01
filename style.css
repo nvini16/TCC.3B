@@ -1,0 +1,127 @@
+/* ==========================================================================
+   Estilos Globais e Fundo
+   ========================================================================== */
+   body {
+    margin: 0;
+    padding: 0;
+    background-color: #0b1116; /* Fundo escuro do jogo caso o vídeo falhe */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column; /* Organiza header acima e main abaixo */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#video-fundo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Mantém o vídeo atrás de todo o conteúdo */
+    object-fit: cover; /* Faz o vídeo cobrir a tela inteira sem distorcer */
+}
+  
+/* .conteudo {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+} */
+
+/* ==========================================================================
+   Header (Logo)
+   ========================================================================== */
+header {
+    text-align: center;
+}
+
+header img {
+    width: 550px;
+    height: auto;
+    padding: 20px;
+}
+
+
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==========================================================================
+   Tipografia e Layout
+   ========================================================================== */
+.russo-one-regular {
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.container {
+    display: flex;         
+    justify-content: center; 
+    gap: 30px; /* Distância exata entre os botões */
+    margin-top: 20px;
+}
+
+.container a {
+    text-decoration: none; /* Remove sublinhado padrão dos links */
+}
+
+/* ==========================================================================
+   Botões (Estilo Sheikah Slate Aplicado a .log e .cad)
+   ========================================================================== */
+.log, .cad {
+    /* Estrutura e Dimensões Originais */
+    padding: 15px 40px;
+    font-size: 18px;
+    font-family: "Russo One", sans-serif;
+    cursor: pointer;
+    outline: none;
+    
+    /* Estilo Visual Sheikah Slate */
+    background: transparent;
+    color: #76d2cc;
+    border: 2px solid #0431c7;
+    border-radius: 5px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px rgba(4, 10, 10, 0.15);
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+/* NAVEGAÇÃO HEADER */
+.zelda-btn.expand-fade {
+    animation: botwExpand 0.6s cubic-bezier(0.1, 0.8, 0.3, 1) forwards;
+    pointer-events: none;
+}
+
+
+.log:hover, .cad:hover {
+    background-color: rgba(79, 225, 216, 0.1);
+    box-shadow: 0 0 20px rgba(79, 225, 216, 0.6);
+    text-shadow: 0 0 5px #4fe1d8;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+
+
+
+
